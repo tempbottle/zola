@@ -26,7 +26,7 @@ pub fn warn(message: &str) {
 pub fn success(message: &str) {
     colorize(
         message,
-        ColorSpec::new().set_bold(true).set_fg(Some(Color::Green)),
+        ColorSpec::new().set_bold(true).set_fg(Some(Color::White)),
         StandardStream::stdout(*COLOR_CHOICE),
     );
 }
